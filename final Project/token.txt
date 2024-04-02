@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "csrf_token": "IjcwNTcxNjZhYmUwZmUxMzg4YjUxZDNlNzc3OThiMjQ1NDk5MGZmNzgi.Y8G72A.0AGsjJKHK1RPdJmxl85v4l5OJY4",
+        "user": {
+            "authentication_token": "WyI3MGYyYzU3Y2FjYTk0YjcwOTFkYmEyMGY4MmUxMzg5NSJd.Y8G72A.7Yg_M0ZF0MNrTto7iwGp0dtFTEQ"
+        }
+    }
+}
+
+fetch('http://localhost:8080/api/user',{headers: {
+      'Content-Type': 'application/json',
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+      "authentication_token": "WyJmY2VjMGFjNzhlYTM0MzBiYmI4ODA1ZmI5YWMwMDIzZCJd.ZMLC0Q.jjMNZ2xDW0vLxyraK3b8RKrX5Wg"
+    }})
+  .then((response) => response.json())
+  .then((data) => console.log(data));
