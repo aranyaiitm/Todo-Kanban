@@ -7,7 +7,7 @@ export default {
             <div class="card-header text-center" aria-current="true">
                 <div class="dropdown">
                     <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Todo
+                    {{ list.list_name }}
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Edit</a></li>
@@ -18,7 +18,7 @@ export default {
 
             <ul class="list-group list-group-flush" style="overflow-y: auto; max-height: 58vh;">
                 <!-- Cards -->
-                <Card v-for="card in list" :card = 'card'/>
+                <Card v-for="card in list.cards" :card = 'card'/>
             </ul>
             
             <div class="card-body text-center">

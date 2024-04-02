@@ -7,7 +7,7 @@ export default {
         <div class="container" style="min-height: 79vh;">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                     <!-- List -->
-                <List v-for="list in Lists" :list = 'list'/>
+                <List v-for="list in user.lists" :list = 'list'/>
                 <div class="col">
                     <router-link class="card btn btn-light h-100 text-center" style="min-height: 50vh;" :to="{name:'addlist'}">
                         <h1 class="my-auto"><i class="bi bi-file-earmark-plus-fill"></i></h1>
