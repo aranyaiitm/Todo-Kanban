@@ -1,1 +1,1 @@
-Kanban App
+Kanban App v2
